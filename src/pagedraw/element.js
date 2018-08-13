@@ -6,41 +6,56 @@ function render() {
   return (
     <div className="element-element-0">
       <div className="element-0">
-        <div className="element-0-0">
-          <div className="element-rectangle-0">
+        <div className="element-rectangle-0">
+          <div className="element-0-0-0">
             <div className="element-0-0-0-0">
               <div className="element-0-0-0-0-0">
-                <div className="element-0-0-0-0-0-0">
-                  <div className="element-implements-0">Implements</div>
-                </div>
-                <div className="element-0-0-0-0-0-1">
-                  <div className="element-tool-1">{this.props.tool1}</div>
-                  <div className="element-tool-2">{this.props.tool2}</div>
-                </div>
-                <div className="element-0-0-0-0-0-2">
-                  <div className="element-0-0-0-0-0-2-0">
-                    <div className="element-0-0-0-0-0-2-0-0">
-                      <div className="element-tool-7">{this.props.tool3}</div>
+                <div className="element-title-0">{this.props.title}</div>
+              </div>
+              <div className="element-0-0-0-0-1">
+                <div className="element-implements-0">Implements</div>
+              </div>
+              <div className="element-0-0-0-0-2">
+                <div className="element-0-0-0-0-2-0">
+                  <div className="element-0-0-0-0-2-0-0">
+                    <div className="element-rectangle_2">
+                      <div className="element-0-0-0-0-2-0-0-0-0">
+                        <div className="element-tool-1">{this.props.tool1}</div>
+                      </div>
+                      <div className="element-0-0-0-0-2-0-0-0-1">
+                        <div className="element-tool-7">{this.props.tool3}</div>
+                      </div>
                     </div>
                   </div>
-                  <div className="element-0-0-0-0-0-2-1">
-                    <div className="element-0-0-0-0-0-2-1-0">
-                      <div className="element-tool-8">{this.props.tool4}</div>
+                </div>
+                <div className="element-0-0-0-0-2-1">
+                  <div className="element-0-0-0-0-2-1-0">
+                    <div className="element-rectangle_3">
+                      <div className="element-0-0-0-0-2-1-0-0-0">
+                        <div className="element-tool-2">{this.props.tool2}</div>
+                      </div>
+                      <div className="element-0-0-0-0-2-1-0-0-1">
+                        <div className="element-tool-8">{this.props.tool4}</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <img src={this.props.img_src} className="element-image-5" />
             </div>
             <div className="element-0-0-0-1">
-              <div className="element-description-0">
-                {this.props.description}
+              <div className="element-0-0-0-1-0">
+                <img src={this.props.img_src} className="element-image-5" />
               </div>
             </div>
           </div>
-          <div className="element-title-0">{this.props.title}</div>
+          <div className="element-0-0-1">
+            <div className="element-description-0">
+              {this.props.description}
+            </div>
+          </div>
         </div>
       </div>
+      <div className="element-1" />
     </div>
   );
 }
