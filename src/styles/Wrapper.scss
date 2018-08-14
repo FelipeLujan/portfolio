@@ -1,0 +1,5 @@
+.container {
+  display: grid;
+  grid-template-columns: [very-left] 1fr [core-left] 10fr [core-right] 1fr [very-right];
+  justify-items: center;
+}

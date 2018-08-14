@@ -2,19 +2,17 @@
 import React from "react";
 import "./title.css";
 
-function render() {
-  return (
-    <div className="title-title-1">
-      <div className="title-0">
-        <div className="title-0-0">
-          <div className="title-felipe_lujan-0">Felipe Lujan</div>
-          <div className="title-rectangle_2" />
+export default class Title extends React.Component {
+  render() {
+    return (
+      <div className="title-title-1">
+        <div className="title-0">
+          <div className="title-0-0">
+            <div className="title-felipe_lujan-0">Felipe Lujan</div>
+            <div className="title-rectangle_2" />
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-export default function(props) {
-  return render.apply({ props: props });
+    );
+  }
 }

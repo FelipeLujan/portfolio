@@ -2,34 +2,32 @@
 import React from "react";
 import "./section1.css";
 
-function render() {
-  return (
-    <div className="section1-section1">
-      <div className="section1-0">
-        <div className="section1-0-0">
-          <div className="section1-0-0-0">
-            <div className="section1-0-0-0-0">
-              <div className="section1-felipe_lujan-0">Felipe Lujan</div>
-              <div className="section1-rectangle_2" />
+export default class Section1 extends React.Component {
+  render() {
+    return (
+      <div className="section1-section1">
+        <div className="section1-0">
+          <div className="section1-0-0">
+            <div className="section1-0-0-0">
+              <div className="section1-0-0-0-0">
+                <div className="section1-felipe_lujan-0">Felipe Lujan</div>
+                <div className="section1-rectangle_2" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="section1-1">
-        <div className="section1-1-0">
-          <div className="section1-1-0-0">
-            <div className="section1-1-0-0-0">
-              <div className="section1-web_developer-0">Web Developer</div>
-              <div className="section1-rectangle_2_" />
+        <div className="section1-1">
+          <div className="section1-1-0">
+            <div className="section1-1-0-0">
+              <div className="section1-1-0-0-0">
+                <div className="section1-web_developer-0">Web Developer</div>
+                <div className="section1-rectangle_2_" />
+              </div>
             </div>
           </div>
         </div>
+        <div className="section1-2" />
       </div>
-      <div className="section1-2" />
-    </div>
-  );
-}
-
-export default function(props) {
-  return render.apply({ props: props });
+    );
+  }
 }

@@ -2,19 +2,17 @@
 import React from "react";
 import "./subtitle.css";
 
-function render() {
-  return (
-    <div className="subtitle-subtitle-4">
-      <div className="subtitle-0">
-        <div className="subtitle-0-0">
-          <div className="subtitle-web_developer-0">Web Developer</div>
-          <div className="subtitle-rectangle_2" />
+export default class Subtitle extends React.Component {
+  render() {
+    return (
+      <div className="subtitle-subtitle-4">
+        <div className="subtitle-0">
+          <div className="subtitle-0-0">
+            <div className="subtitle-web_developer-0">Web Developer</div>
+            <div className="subtitle-rectangle_2" />
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-export default function(props) {
-  return render.apply({ props: props });
+    );
+  }
 }
