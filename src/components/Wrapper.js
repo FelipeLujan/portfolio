@@ -1,17 +1,25 @@
 import React, { Component } from "react";
-import About from "../pagedraw/about";
 import Element from "../pagedraw/element";
 import Title from "../pagedraw/title";
 import Subtitle from "../pagedraw/subtitle";
 
 import "../styles/Wrapper.scss";
 import Section1 from "./Section1";
+import About from "./About";
 
 class Wrapper extends Component {
   render() {
     return (
       <div className={"container"}>
-        <Section1 />
+        <div className={"section1"}>
+          <Section1 />
+        </div>
+        <div className="about">
+          <About />
+        </div>
+        {/*<div className={"element"}>*/}
+        {/*<Element />*/}
+        {/*</div>*/}
 
         {/*<Section1 />*/}
         {/*<About />*/}

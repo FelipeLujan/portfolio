@@ -1,0 +1,17 @@
+@import "../variables";
+.about-area {
+  background-color: $midtone;
+  display: grid;
+  grid-template-rows: [very-top]100px [mid-line] auto [very-bottom];
+  grid-template-columns: 1fr 10fr 1fr;
+
+  .about {
+    grid-area: about;
+  }
+  .bio {
+    grid-area: bio;
+  }
+  grid-template-areas:
+    ". about ."
+    ". bio .";
+}
