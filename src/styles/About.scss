@@ -11,11 +11,13 @@
     font-family: $robotoTitle;
     color: $accent;
     margin-bottom: 0;
+    margin-left: $titleMargin;
   }
   p.bio {
     grid-area: bio;
     font-family: $robotoParagraph;
     line-height: $paragraphLineHeight;
+    margin-bottom: 4vh;
     strong {
       color: $accent;
     }

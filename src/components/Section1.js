@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import Title from "../pagedraw/title";
 import Subtitle from "../pagedraw/subtitle";
 import "../styles/Section1.scss";
@@ -16,7 +15,5 @@ class Section1 extends Component {
     );
   }
 }
-
-Section1.propTypes = {};
 
 export default Section1;

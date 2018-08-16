@@ -3,7 +3,7 @@ import "../../styles/experience/experience.scss";
 class Experience extends Component {
   render() {
     return (
-      <div className={"container-2 container-grid"}>
+      <div className={"single-experience-container"}>
         <div className="img">img</div>
         <div className="icon">icon</div>
         <div className="projectTitle">title</div>

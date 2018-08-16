@@ -4,6 +4,7 @@
   grid-column-end: col-start 12;
   grid-row-start: very-top;
   grid-row-end: section-1-end;
+  height: 100vh;
 }
 .about {
   grid-area: about-grid-area;
@@ -23,7 +24,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-template-rows: [very-top] 1fr [section-1-end] auto [about-end] 1fr [experiences-end];
+  grid-template-rows: [very-top] auto [section-1-end] auto [about-end] 1fr [experiences-end];
   //grid-template-areas:
   //  ". section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area ."
   //  "about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area ";

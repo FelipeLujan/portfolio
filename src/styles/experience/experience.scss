@@ -21,11 +21,10 @@ div {
   }
 }
 
-.container-2.container-grid {
+.single-experience-container {
   height: 50vh;
   display: grid;
   padding-bottom: 10px;
-  background-color: #eee;
 
   grid-template-areas: "img img img img img img img img img img img img" ". icon . title title title title . . . . ." "teaser teaser teaser teaser teaser teaser teaser teaser teaser teaser teaser ." "btn btn btn btn btn btn btn btn btn btn btn btn";
   grid-template-columns: repeat(2, minmax(auto, 1fr)) repeat(
