@@ -1,0 +1,22 @@
+@import "../variables";
+
+div {
+  .TitleExperience {
+    color: $accent;
+    grid-area: TitleExperience;
+  }
+  .experience {
+    background-color: $shadow;
+    height: 100vh;
+  }
+}
+
+.container-grid.container-1 {
+  display: grid;
+  background-color: #c6a3a3;
+
+  grid-area: experiences;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: minmax(auto, 100px) auto minmax(auto, 100px);
+  grid-template-areas: ". TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience ." ". experience experience experience experience experience experience experience experience experience experience ." ". . . . . . . . . . . .";
+}

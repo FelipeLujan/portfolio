@@ -6,6 +6,7 @@ import Subtitle from "../pagedraw/subtitle";
 import "../styles/Wrapper.scss";
 import Section1 from "./Section1";
 import About from "./About";
+import Experiences from "./experiences";
 
 class Wrapper extends Component {
   render() {
@@ -16,6 +17,10 @@ class Wrapper extends Component {
         </div>
         <div className="about">
           <About />
+        </div>
+
+        <div className="experiences">
+          <Experiences />
         </div>
         {/*<div className={"element"}>*/}
         {/*<Element />*/}

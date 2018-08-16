@@ -12,11 +12,18 @@
   grid-row-start: section-1-end;
   grid-row-end: about-end;
 }
+.experiences {
+  grid-area: section1-grid-area;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 12;
+  grid-row-start: about-end;
+  grid-row-end: experiences-end;
+}
 
 .container {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-template-rows: [very-top] 1fr [section-1-end] 100px [about-end];
+  grid-template-rows: [very-top] 1fr [section-1-end] auto [about-end] 1fr [experiences-end];
   //grid-template-areas:
   //  ". section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area ."
   //  "about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area ";

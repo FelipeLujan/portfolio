@@ -2,14 +2,23 @@
 .about-area {
   background-color: $midtone;
   display: grid;
-  grid-template-rows: [very-top]100px [mid-line] auto [very-bottom];
+  grid-template-rows: [very-top] Auto [mid-line] auto;
   grid-template-columns: 1fr 10fr 1fr;
+  height: 100%;
 
   .about {
     grid-area: about;
+    font-family: $robotoTitle;
+    color: $accent;
+    margin-bottom: 0;
   }
-  .bio {
+  p.bio {
     grid-area: bio;
+    font-family: $robotoParagraph;
+    line-height: $paragraphLineHeight;
+    strong {
+      color: $accent;
+    }
   }
   grid-template-areas:
     ". about ."

@@ -14,6 +14,9 @@ class App extends Component {
     return (
       <div className="App">
         <Wrapper />
+        <style>
+          @import url('https://fonts.googleapis.com/css?family=Roboto');
+        </style>
       </div>
     );
   }
