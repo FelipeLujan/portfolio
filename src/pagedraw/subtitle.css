@@ -16,19 +16,9 @@
   padding-right: 11px;
 }
 
-.subtitle-0-0 {
-  width: 414px;
-  height: 55px;
-  flex-shrink: 0;
-  position: relative;
-}
-
 .subtitle-web_developer-0 {
   width: 414px;
-  flex-grow: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  flex-shrink: 0;
   font-family: "Montserrat", sans-serif;
   color: rgba(252, 212, 80, 1);
   font-size: 48px;
@@ -39,17 +29,6 @@
   text-decoration: none;
   text-align: LEFT;
   word-wrap: break-word;
-}
-
-.subtitle-rectangle_2 {
-  width: 377px;
-  height: 18px;
-  flex-grow: 1;
-  position: absolute;
-  top: 31px;
-  left: 0px;
-  border-radius: 9px;
-  background: rgba(10, 104, 117, 1);
 }
 
 * {

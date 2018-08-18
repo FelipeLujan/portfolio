@@ -2,28 +2,33 @@
 
 div {
   .TitleExperience {
-    color: $accent;
-    grid-area: TitleExperience;
     font-family: $robotoTitle;
     font-size: $titleSize;
+    text-align: center;
+    color: $accent;
+    background-color: $shadow;
+
     margin-left: $titleMargin;
+    margin-top: -3vh;
+    margin-bottom: 0.5em;
+
+    grid-area: TitleExperience;
   }
   .experience {
     background-color: $shadow;
-
     grid-area: experience;
   }
 }
 
 div.experiences-container {
   display: grid;
-  margin-top: 5vh;
+  margin-top: 3em;
 
   grid-area: experiences;
-  grid-template-columns: repeat(12, auto);
-  grid-template-rows: minmax(auto, 100px) auto minmax(auto, 100px);
+  grid-template-columns: repeat(12, 1fr);
+  border: 1px solid $midtone;
 
   grid-template-areas:
-    ". TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience ."
-    ". experience experience experience experience experience experience experience experience experience experience ." ". . . . . . . . . . . .";
+    ". TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience TitleExperience . ."
+    ". experience experience experience experience experience experience experience experience experience experience .";
 }

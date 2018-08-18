@@ -6,7 +6,7 @@ class Experiences extends Component {
   render() {
     return (
       <div className={"experiences-container"}>
-        <div className={"TitleExperience"}> Title Experience</div>{" "}
+        <div className={"TitleExperience"}> Projects</div>{" "}
         <div className={"experience"}>
           <Experience className={"ExperienceComponent"} />
           <Experience className={"ExperienceComponent"} />

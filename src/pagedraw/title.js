@@ -7,10 +7,7 @@ export default class Title extends React.Component {
     return (
       <div className="title-title-1">
         <div className="title-0">
-          <div className="title-0-0">
-            <div className="title-felipe_lujan-0">Felipe Lujan</div>
-            <div className="title-rectangle_2" />
-          </div>
+          <div className="title-felipe_lujan-0">Felipe Lujan</div>
         </div>
       </div>
     );

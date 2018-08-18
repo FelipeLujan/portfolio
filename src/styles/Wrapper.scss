@@ -24,8 +24,5 @@
 .container {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-template-rows: [very-top] auto [section-1-end] auto [about-end] 1fr [experiences-end];
-  //grid-template-areas:
-  //  ". section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area section1-grid-area ."
-  //  "about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area about-grid-area ";
+  grid-template-rows: [very-top] auto [section-1-end] auto [about-end] auto [experiences-end];
 }

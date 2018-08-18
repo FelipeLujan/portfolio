@@ -10,9 +10,7 @@ class About extends Component {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
           aliquid, consectetur ea <strong>ipsam magnam</strong> nisi officia,
           pariatur porro quaerat quasi quo suscipit, voluptate voluptatem. Ad
-          commodi dignissimos eligendi facere molestiae molestias natus quod!
-          Autem commodi debitis delectus ea eos natus numquam odit officia
-          repellendus sequi similique temporibus totam velit, voluptatum!
+          commodi dignissimos eligendi
         </p>
       </div>
     );

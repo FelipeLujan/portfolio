@@ -8,8 +8,10 @@ class Section1 extends Component {
     return (
       <div className={"main-container"}>
         <div className="title">
-          <Title />
-          <Subtitle />
+          <div className={"felipe"}>Felipe Lujan</div>
+          <div className={"webdev"}>Web Developer</div>
+          {/*<Title />*/}
+          {/*<Subtitle />*/}
         </div>
       </div>
     );

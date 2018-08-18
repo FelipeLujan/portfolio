@@ -7,10 +7,7 @@ export default class Subtitle extends React.Component {
     return (
       <div className="subtitle-subtitle-4">
         <div className="subtitle-0">
-          <div className="subtitle-0-0">
-            <div className="subtitle-web_developer-0">Web Developer</div>
-            <div className="subtitle-rectangle_2" />
-          </div>
+          <div className="subtitle-web_developer-0">Web Developer</div>
         </div>
       </div>
     );

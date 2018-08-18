@@ -1,37 +1,51 @@
+@import "../../variables";
 div {
   .img {
     grid-area: img;
-    background-color: #c6a3a3;
   }
   .projectTitle {
     grid-area: title;
-    background-color: #c6a3a3;
   }
   .icon {
     grid-area: icon;
-    background-color: #c6a3a3;
   }
   .teaser {
     grid-area: teaser;
-    background-color: #c6a3a3;
   }
   .btn {
     grid-area: btn;
-    background-color: #c6a3a3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
 
 .single-experience-container {
   height: 50vh;
   display: grid;
-  padding-bottom: 10px;
+  border: 1px solid $midtone;
+  font-family: $robotoParagraph;
+  color: #0bb7b8;
 
-  grid-template-areas: "img img img img img img img img img img img img" ". icon . title title title title . . . . ." "teaser teaser teaser teaser teaser teaser teaser teaser teaser teaser teaser ." "btn btn btn btn btn btn btn btn btn btn btn btn";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+
+  margin-bottom: 3em;
+
+  grid-template-areas:
+    "img img img img img img img img img img img img"
+    ". icon title title title title . . . . . ."
+    ". teaser teaser teaser teaser teaser teaser teaser teaser teaser teaser ."
+    ". btn btn btn btn btn btn btn btn btn btn .";
   grid-template-columns: repeat(2, minmax(auto, 1fr)) repeat(
       10,
       minmax(auto, 1fr)
     );
-  grid-template-rows: minmax(auto, 50%) minmax(auto, 20%) repeat(
+  grid-template-rows: minmax(auto, 50%) minmax(auto, 3em) repeat(
       2,
       minmax(auto, auto)
     );
