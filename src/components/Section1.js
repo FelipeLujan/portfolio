@@ -7,7 +7,7 @@ class Section1 extends Component {
       <div className={"main-container"}>
         <div className="title">
           <div className={"felipe"}>
-            Felipe Lujan<div className={"line"} />
+            Felipe Luján<div className={"line"} />
           </div>
 
           <div className={"webdev"}>

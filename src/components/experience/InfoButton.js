@@ -5,8 +5,8 @@ const InfoButton = props => {
   return (
     <svg
       width="30 + '%'"
-      height="39"
-      viewBox="0 0 101 39"
+      height="40"
+      viewBox="0 0 102 39"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

@@ -19,7 +19,8 @@
       width: 12ex;
       height: 0.1em;
       margin-top: -0.2em;
-      border-radius: 5px;
+      border-radius: 10px;
+      z-index: -1;
     }
     grid-row-start: 9;
     grid-row-end: 10;
@@ -35,7 +36,8 @@
       width: 15ex;
       height: 0.1em;
       margin-top: -0.5em;
-      border-radius: 5px;
+      border-radius: 10px;
+      z-index: -1;
     }
     grid-row-start: 10;
     grid-row-end: 11;
