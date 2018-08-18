@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Title from "../pagedraw/title";
-import Subtitle from "../pagedraw/subtitle";
 import "../styles/Section1.scss";
 
 class Section1 extends Component {
@@ -8,8 +6,13 @@ class Section1 extends Component {
     return (
       <div className={"main-container"}>
         <div className="title">
-          <div className={"felipe"}>Felipe Lujan</div>
-          <div className={"webdev"}>Web Developer</div>
+          <div className={"felipe"}>
+            Felipe Lujan<div className={"line"} />
+          </div>
+
+          <div className={"webdev"}>
+            Web Developer <div className={"line"} />
+          </div>
           {/*<Title />*/}
           {/*<Subtitle />*/}
         </div>

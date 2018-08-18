@@ -2,9 +2,8 @@
 .title {
   height: 100vh;
   display: grid;
-  grid-template-rows: [very-top] 1fr [very-bottom];
+  grid-template-rows: repeat(12, 1fr);
   justify-items: start;
-  align-items: end;
   font-family: $monserratTitle;
   color: $accent;
 
@@ -14,10 +13,31 @@
     letter-spacing: 0;
     font-weight: 800;
     word-wrap: normal;
+    .line {
+      background-color: $highlight;
+      position: absolute;
+      width: 12ex;
+      height: 0.1em;
+      margin-top: -0.2em;
+      border-radius: 5px;
+    }
+    grid-row-start: 9;
+    grid-row-end: 10;
   }
+
   .webdev {
     font-size: 32px;
     line-height: 55px;
     font-weight: 800;
+    .line {
+      background-color: $highlight;
+      position: absolute;
+      width: 15ex;
+      height: 0.1em;
+      margin-top: -0.5em;
+      border-radius: 5px;
+    }
+    grid-row-start: 10;
+    grid-row-end: 11;
   }
 }
