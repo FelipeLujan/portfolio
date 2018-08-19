@@ -9,13 +9,14 @@ class Experience extends Component {
     return (
       <div className={"single-experience-container"}>
         <div className="img">
-          <img src={this.props.URL} alt="Made in React" width={100 + "%"} />
+          <img src={this.props.URL} alt={"Thumbnail"} width={100 + "%"} />
         </div>
         <img
           src="https://res.cloudinary.com/felipelujan/image/upload/f_auto/v1534558392/portfolio/react.svg"
           className="icon"
           alt="Made in React"
         />
+
         <div
           className="projectTitle"
           style={{
@@ -24,10 +25,11 @@ class Experience extends Component {
             "font-weight": 500,
             "line-height": "normal",
             "font-size": 20 + "px",
-            "letter-spacing": 0.15 + "px"
+            "letter-spacing": 0.15 + "px",
+            "margin-bottom": 1 + "em"
           }}
         >
-          Headline
+          {this.props.headline}
         </div>
 
         <div
@@ -40,8 +42,7 @@ class Experience extends Component {
             "letter-spacing": 0.25 + "px"
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque,
-          commodi eius esse minus non unde velit vitae voluptatem voluptatibus.
+          {this.props.description}
         </div>
         <div className="btn">
           <AppButton />

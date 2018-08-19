@@ -33,13 +33,14 @@ class Experiences extends Component {
 
     let content = projects.map(project => (
       <Experience
-        title={project.headline}
+        headline={project.headline}
         URL={project.URL}
         description={project.description}
         app={project.app}
         info={project.info}
         github={project.github}
         icon={project.icon}
+        key={project.index}
       />
     ));
 
