@@ -1,0 +1,13 @@
+@import "../variables";
+
+div.projectBody {
+  .banner {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-color: #2b3940;
+  }
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}

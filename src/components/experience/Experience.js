@@ -9,11 +9,7 @@ class Experience extends Component {
     return (
       <div className={"single-experience-container"}>
         <div className="img">
-          <img
-            src="https://res.cloudinary.com/felipelujan/image/upload/f_auto,q_auto/v1534565524/portfolio/remodelaciones.png"
-            alt="Made in React"
-            width={100 + "%"}
-          />
+          <img src={this.props.URL} alt="Made in React" width={100 + "%"} />
         </div>
         <img
           src="https://res.cloudinary.com/felipelujan/image/upload/f_auto/v1534558392/portfolio/react.svg"
