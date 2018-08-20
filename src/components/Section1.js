@@ -13,8 +13,6 @@ class Section1 extends Component {
           <div className={"webdev"}>
             Web Developer <div className={"line"} />
           </div>
-          {/*<Title />*/}
-          {/*<Subtitle />*/}
         </div>
       </div>
     );

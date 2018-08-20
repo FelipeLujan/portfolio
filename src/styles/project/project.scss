@@ -1,0 +1,16 @@
+@import "../../variables";
+
+div.projectBody {
+  display: grid;
+  grid-template-rows: 30em 3em 9em 1fr;
+  grid-template-columns: repeat(12, 1fr);
+
+  .img {
+  }
+  .title {
+  }
+  .technicalDescription {
+  }
+  .tools {
+  }
+}

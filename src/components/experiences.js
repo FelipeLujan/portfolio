@@ -3,11 +3,23 @@ import Experience from "./experience/Experience";
 import "../styles/experiences.scss";
 
 class Experiences extends Component {
+  // componentDidMount() {
+  //   //wake up heroku dynos :v (CORB expected)
+  //   fetch("https://fierce-spire-11944.herokuapp.com/")
+  //     .then(data => console.log(data))
+  //     .catch();
+  //
+  //   fetch("https://chatappz.herokuapp.com/")
+  //     .then(data => console.log(data))
+  //     .catch();
+  // }
+
   render() {
     let angular;
     let react;
     let projects = [
       {
+        id: 1,
         URL:
           "https://res.cloudinary.com/felipelujan/image/upload/f_auto/v1534565515/portfolio/pesqueria.png",
         headline: "Catch of the Day",
@@ -19,6 +31,7 @@ class Experiences extends Component {
         icon: react
       },
       {
+        id: 2,
         URL:
           "https://res.cloudinary.com/felipelujan/image/upload/f_auto,q_auto/v1534565524/portfolio/remodelaciones.png",
         headline: "RemodelacionesLujan.com",
@@ -40,7 +53,7 @@ class Experiences extends Component {
         info={project.info}
         github={project.github}
         icon={project.icon}
-        key={project.index}
+        key={project.id}
       />
     ));
 
