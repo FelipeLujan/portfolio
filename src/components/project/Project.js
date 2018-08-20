@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "../../styles/project/project.scss";
 class Project extends Component {
   componentDidMount() {
     console.log(this.props.match.params.project);
@@ -8,12 +8,10 @@ class Project extends Component {
   render() {
     return (
       <div className={"projectBody"}>
-        <div className={"img"}>
-          <img src="" alt="placeholder" />
-        </div>
-        <div className="title">Title</div>
-        <div className="technicalDescription">Technical description</div>
-        <div className="tools">Tools</div>
+        <div className={"thumbnail"} />
+        <div className="detailsTitle">Title</div>
+        <div className="detailsDescription">Technical description</div>
+        <div className="detailsTools">Tools</div>
       </div>
     );
   }
