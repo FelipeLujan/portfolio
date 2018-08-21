@@ -70,18 +70,43 @@ class Experiences extends Component {
       {
         id: 3,
         URL:
-          "https://res.cloudinary.com/felipelujan/image/upload/f_auto,q_auto/v1534565524/portfolio/remodelaciones.png",
-        headline: "RemodelacionesLujan.com",
+          "https://res.cloudinary.com/felipelujan/image/upload/f_auto/v1534565513/portfolio/chat.png",
+        headline: "Firestore Chat",
+        description:
+          " A tealtime Chat prowered by Firestore. Open it in 2 browsers and check it out",
+        app: "https://chatappz.herokuapp.com/",
+        info: "firestore chat",
+        github: "https://github.com/FelipeLujan/FirebaseChat",
+        icon: angular,
+        details: [
+          {
+            technicalDescription:
+              "This realtime messaging app (chat) uses *ngFor directives to render out the content of a document in a Firestore database. The order of the entrances are determined by a server-side timestamp added to every message. ",
+            tools: [
+              "Angular 5",
+              "Firestore",
+              "Angular Firebase 2",
+              "Jarn Package Manager",
+              "Bootstrap Framework"
+            ]
+          }
+        ]
+      },
+      {
+        id: 3,
+        URL:
+          "https://res.cloudinary.com/felipelujan/image/upload/f_auto/v1534824618/portfolio/devconnect.png",
+        headline: "DevConnect",
         description:
           " A social network for people to create a profile with their experience and education and a feed for users to share, like and comment posts ",
-        app: "http://www.remodelacioneslujan.com",
+        app: "https://fierce-spire-11944.herokuapp.com/",
         info: "devconnector",
-        github: "https://github.com/FelipeLujan/RemodelacionesLujan",
+        github: "https://github.com/FelipeLujan/devConnect",
         icon: react,
         details: [
           {
             technicalDescription:
-              "This is a full-stack React with Redux app that runs on a Node - Express API. Data is stored in a mLab database. Authentication is handled through JSON Web Tokens (JWT). Everything runs on ",
+              "This is a full-stack MERN app React with Redux app that runs on a Node - Express API. Data is stored in a mLab database. Authentication is handled through JSON Web Tokens (JWT).",
             tools: [
               "React",
               "Redux",
@@ -89,8 +114,7 @@ class Experiences extends Component {
               "Express",
               "Mongo DB",
               "Mongoose",
-              "Axios",
-              "Bootstrap framework"
+              "Axios"
             ]
           }
         ]
