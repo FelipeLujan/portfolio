@@ -66,6 +66,34 @@ class Experiences extends Component {
             ]
           }
         ]
+      },
+      {
+        id: 3,
+        URL:
+          "https://res.cloudinary.com/felipelujan/image/upload/f_auto,q_auto/v1534565524/portfolio/remodelaciones.png",
+        headline: "RemodelacionesLujan.com",
+        description:
+          " A social network for people to create a profile with their experience and education and a feed for users to share, like and comment posts ",
+        app: "http://www.remodelacioneslujan.com",
+        info: "devconnector",
+        github: "https://github.com/FelipeLujan/RemodelacionesLujan",
+        icon: react,
+        details: [
+          {
+            technicalDescription:
+              "This is a full-stack React with Redux app that runs on a Node - Express API. Data is stored in a mLab database. Authentication is handled through JSON Web Tokens (JWT). Everything runs on ",
+            tools: [
+              "React",
+              "Redux",
+              "Node.js",
+              "Express",
+              "Mongo DB",
+              "Mongoose",
+              "Axios",
+              "Bootstrap framework"
+            ]
+          }
+        ]
       }
     ];
     /*  technicalDescription:
