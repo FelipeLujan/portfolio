@@ -3,16 +3,16 @@ import Experience from "./experience/Experience";
 import "../styles/experiences.scss";
 
 class Experiences extends Component {
-  // componentDidMount() {
-  //   //wake up heroku dynos :v (CORB expected)
-  //   fetch("https://fierce-spire-11944.herokuapp.com/")
-  //     .then(data => console.log(data))
-  //     .catch();
-  //
-  //   fetch("https://chatappz.herokuapp.com/")
-  //     .then(data => console.log(data))
-  //     .catch();
-  // }
+  componentDidMount() {
+    //wake up heroku dynos :v (CORB expected)
+    fetch("https://fierce-spire-11944.herokuapp.com/")
+      .then(data => console.log(data))
+      .catch();
+
+    fetch("https://chatappz.herokuapp.com/")
+      .then(data => console.log(data))
+      .catch();
+  }
 
   render() {
     let angular;
@@ -28,7 +28,14 @@ class Experiences extends Component {
         app: "https://pesqueria.herokuapp.com/",
         info: "catchOfTheDay",
         github: "https://github.com/FelipeLujan/catchReactApp",
-        icon: react
+        icon: react,
+        details: [
+          {
+            technicalDescription:
+              "This app makes extensive use of React features such as class and stateless components, proptypes, event handlers, proptypes, lists, etc. It also has protected routes that make use of persistent state synced with Firebase.",
+            tools: ["React.js", "Firebase", "CSS", "JSX", "re-base"]
+          }
+        ]
       },
       {
         id: 2,
@@ -40,22 +47,32 @@ class Experiences extends Component {
         app: "http://www.remodelacioneslujan.com",
         info: "remodelacioneslujan",
         github: "https://github.com/FelipeLujan/RemodelacionesLujan",
-        icon: angular
+        icon: angular,
+        details: [
+          {
+            technicalDescription:
+              "An Angular SPA with multiple SEO improvements and performance improvements (feel free to audit with Lighthouse), Employs core Angular features such as directives and services. Media is stored in Cloudinary for CDN and image conversion. ",
+            tools: [
+              "Angular 5",
+              "TypeScript",
+              "ngForms",
+              "ngRouter",
+              "Bootstrap framework",
+              "Lazy-load images",
+              "SCSS",
+              "Firestore",
+              "next-gen image formats",
+              "Route-specific Meta tags"
+            ]
+          }
+        ]
       }
     ];
+    /*  technicalDescription:
+          "This app makes extensive use of React features such as class and stateless components, proptypes, event handlers, proptypes, lists, etc. It also has protected routes that make use of persistent state synced with Firebase.",
+        tools: ["React.js", "Firebase", "CSS", "JSX", "re-base"]*/
 
-    let content = projects.map(project => (
-      <Experience
-        headline={project.headline}
-        URL={project.URL}
-        description={project.description}
-        app={project.app}
-        info={project.info}
-        github={project.github}
-        icon={project.icon}
-        key={project.id}
-      />
-    ));
+    let content = projects.map(project => <Experience content={project} />);
 
     return (
       <div className={"experiences-container"}>

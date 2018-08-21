@@ -1,17 +1,27 @@
 import React, { Component } from "react";
 import "../../styles/project/project.scss";
 class Project extends Component {
-  componentDidMount() {
-    console.log(this.props.match.params.project);
-  }
-
   render() {
+    console.log(this.props);
+
+    let { headline } = this.props.location.state.content;
+    let {
+      technicalDescription,
+      tools
+    } = this.props.location.state.content.details[0];
+
+    let toolList = tools.map(tool => <div>{tool}</div>);
     return (
       <div className={"projectBody"}>
         <div className={"thumbnail"} />
-        <div className="detailsTitle">Title</div>
-        <div className="detailsDescription">Technical description</div>
-        <div className="detailsTools">Tools</div>
+        <div className="detailsTitle">{headline}</div>
+        <div className="detailsDescription">
+          {" "}
+          {
+            this.props.location.state.content.details[0].technicalDescription
+          }{" "}
+        </div>
+        <div className="detailsTools">{toolList}</div>
       </div>
     );
   }
