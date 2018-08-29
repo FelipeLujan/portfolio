@@ -93,7 +93,7 @@ class Experiences extends Component {
         ]
       },
       {
-        id: 3,
+        id: 4,
         URL:
           "https://res.cloudinary.com/felipelujan/image/upload/f_auto/v1534824618/portfolio/devconnect.png",
         headline: "DevConnect",

@@ -1,32 +1,57 @@
 @import "../../variables";
 
 div.projectBody {
+  font-family: $monserratTitle;
   display: grid;
-  grid-template-rows: [image-start] 30em [image-end title-start] 2em [title-end description-start] auto [description-end tools-start] auto [tools-end];
+
+  grid-template-rows: [image-start] 30em [image-end title-start] 2em [title-end description-start] auto [description-end employedTech-start] 3em [employedTech-end tools-start] auto [tools-end];
+
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 2em;
 
   .thumbnail {
     grid-row-start: image-start;
     grid-row-end: image-end;
-    grid-column-start: 1;
-    grid-column-end: 13;
-    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 12;
   }
+
   .detailsTitle {
-    grid-area: title-start/ 3 / title-end / 11;
-    background-color: white;
-    place-self: center;
+    grid-row-start: title-start;
+    grid-row-end: title-end;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    color: $accent;
   }
+
   .detailsDescription {
-    grid-area: description-start/ 3 / description-end / 11;
-    background-color: white;
+    grid-row-start: description-start;
+    grid-row-end: description-end;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    color: $highlight;
   }
+
+  .employedTech {
+    grid-row-start: employedTech-start;
+    grid-row-end: employedTech-end;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    color: $accent;
+
+    align-self: center;
+    align-items: center;
+  }
+
   .detailsTools {
-    grid-area: tools-start/ 3 / tools-end / 11;
-    background-color: white;
+    grid-row-start: tools-start;
+    grid-row-end: tools-end;
+    grid-column-start: 2;
+    grid-column-end: 12;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    align-items: center;
+    color: $highlightLight;
   }
 }
