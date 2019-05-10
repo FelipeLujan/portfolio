@@ -6,11 +6,12 @@ import InfoButton from "./InfoButton";
 
 class Experience extends Component {
   render() {
+      const { content,index } = this.props;
     return (
-      <div className={"single-experience-container"}>
+      <div className={"single-experience-container"} key={index}>
         <div className="img">
           <img
-            src={this.props.content.URL}
+            src={content.URL}
             alt={"Thumbnail"}
             width={100 + "%"}
           />
@@ -33,7 +34,7 @@ class Experience extends Component {
             marginBottom: 1 + "em"
           }}
         >
-          {this.props.content.headline}
+          {content.headline}
         </div>
 
         <div
@@ -43,15 +44,15 @@ class Experience extends Component {
             fontStyle: "normal",
             fontWeight: 20 + "px",
             fontSize: 14 + "px",
-            "letter-spacing": 0.25 + "px"
+            "letterSpacing": 0.25 + "px"
           }}
         >
-          {this.props.content.description}
+          {content.description}
         </div>
         <div className="btn">
-          <AppButton app={this.props.content.app} />
-          <InfoButton content={this.props.content} />
-          <GithubButton github={this.props.content.github} />
+          <AppButton app={content.app} />
+          <InfoButton content={content} />
+          <GithubButton github={content.github} />
         </div>
       </div>
     );

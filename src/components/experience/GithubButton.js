@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 
 class GithubButton extends Component {
-  constructor(props) {
-    super(props);
-  }
+
 
   render() {
     return (
       <a href={this.props.github}>
         <svg
-          width="30 + '%'"
+            length="30 + '%'"
           height="40"
           viewBox="0 0 102 39"
           fill="none"

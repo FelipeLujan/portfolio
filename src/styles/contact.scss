@@ -1,0 +1,44 @@
+.contact-component{
+  background: linear-gradient(180deg, #D8DBE2 0%, #FFFFFF 40.24%);
+
+  height: 35rem;
+
+
+  &__mentioned{
+    font-family: Roboto;
+background-color: #00002B ;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 4rem;
+    padding-right: 2rem;
+    padding-top: 1.2rem;
+    p{
+      color: #DADADA;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+
+  &__bio{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+
+    line-height: 28px;
+    strong{
+      font-weight: bold;
+    }
+    p{
+      margin: 1rem;
+      margin-left: 4rem;
+      font-size: 20px;
+    }
+  }
+
+  &__card{
+
+  }
+
+
+
+}

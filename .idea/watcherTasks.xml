@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectTasksOptions" suppressed-tasks="SCSS">
     <enabled-global>
+      <option value="javascript" />
+      <option value="JSX" />
       <option value="prettier" />
     </enabled-global>
   </component>

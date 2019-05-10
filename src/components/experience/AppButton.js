@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 
 class AppButton extends Component {
-  constructor(props) {
-    super(props);
-  }
+
 
   render() {
     return (
       <a href={this.props.app}>
         <svg
-          width="30 + '%'"
+            length="30 + '%'"
           height="40"
           viewBox="0 0 102 39"
           fill="none"
@@ -17,7 +15,7 @@ class AppButton extends Component {
         >
           <g filter="url(#filter0_ddd)">
             <rect
-              width="96"
+                length="96"
               height="36"
               fill="black"
               fillOpacity="0"

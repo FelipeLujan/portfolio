@@ -12,13 +12,13 @@ class Wrapper extends Component {
         <div className={"section1"}>
           <Section1 />
         </div>
-        <div className="about">
-          <About />
-        </div>
+        {/*<div className="about">*/}
+        {/*  <About />*/}
+        {/*</div>*/}
 
-        <div className="experiences">
-          <Experiences />
-        </div>
+        {/*<div className="experiences">*/}
+        {/*  <Experiences />*/}
+        {/*</div>*/}
       </div>
     );
   }

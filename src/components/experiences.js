@@ -124,10 +124,10 @@ class Experiences extends Component {
           "This app makes extensive use of React features such as class and stateless components, proptypes, event handlers, proptypes, lists, etc. It also has protected routes that make use of persistent state synced with Firebase.",
         tools: ["React.js", "Firebase", "CSS", "JSX", "re-base"]*/
 
-    let content = projects.map(project => <Experience content={project} />);
+    let content = projects.map((project,index) => <Experience content={project} key={index} />);
 
     return (
-      <div className={"experiences-container"}>
+      <div className={"experiences-container"} >
         <div className={"TitleExperience"}> Projects</div>{" "}
         <div className={"experience"}>{content}</div>
       </div>

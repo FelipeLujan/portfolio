@@ -2,13 +2,10 @@ import React, { Component } from "react";
 import Link from "react-router-dom/es/Link";
 
 class InfoButton extends Component {
-  constructor(props, context) {
-    super(props, context);
-  }
+
   path = "/" + this.props.info;
 
   render() {
-    console.log(this.props.content);
     return (
       <Link
         to={{
@@ -17,7 +14,7 @@ class InfoButton extends Component {
         }}
       >
         <svg
-          width="30 + '%'"
+            length="30 + '%'"
           height="40"
           viewBox="0 0 102 39"
           fill="none"

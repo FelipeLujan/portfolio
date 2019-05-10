@@ -1,17 +1,25 @@
 import React, { Component } from "react";
-import "../styles/About.scss";
 
 class About extends Component {
   render() {
     return (
       <div className={"about-area"}>
-        <h1 className={"about"}>About</h1>
-        <p className={"bio"}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-          aliquid, consectetur ea <strong>ipsam magnam</strong> nisi officia,
-          pariatur porro quaerat quasi quo suscipit, voluptate voluptatem. Ad
-          commodi dignissimos eligendi
-        </p>
+        <h1 className={"about"}>About me</h1>
+        <div className="bio">
+          <p>
+            I'm a colombian developer experienced in React and Angular
+            frameworks. Although i've tasted several technologies ranging from
+            back-end (nodeJS - express) my main area of expertise is front-end
+            development. Specifically <strong>React</strong> and{" "}
+            <strong>Angular</strong> frameworks.
+          </p>
+          <p>
+            For some of my projects (like this portfolio). I've bought it's
+            domain, managed DNS and SSL certificates, and deployed the projects
+            to <strong>AWS</strong>, <strong>Heroku</strong> and recently{" "}
+            <strong>Google App Engine</strong>{" "}
+          </p>
+        </div>
       </div>
     );
   }
