@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import Card from "@material-ui/core/es/Card/Card";
-import { withStyles } from "@material-ui/core/styles";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import CardContent from "@material-ui/core/CardContent";
-import { Grid } from "@material-ui/core";
+import { Grid, Card, withStyles } from "@material-ui/core";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 let styles = {

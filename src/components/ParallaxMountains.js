@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import Typography from "@material-ui/core/Typography";
+import { Grid } from "@material-ui/core";
 
 class MyComponent extends Component {
   constructor(props) {
@@ -30,21 +31,21 @@ class MyComponent extends Component {
       case width < 480:
         this.setState({
           size: {
-            title: { top: "-200px", bottom: "200px" },
-            layer1: { top: "-50px", bottom: "80px" },
-            layer2: { top: "0px", bottom: "80px" },
-            layer3: { top: "0px", bottom: "20px" },
-            layer4: { top: "0px", bottom: "0px" },
-            layer5: { top: "0px", bottom: "0px" }
+            title: { top: "0px", bottom: "0px" },
+            layer1: { top: "0px", bottom: "0px" },
+            layer2: { top: "50px", bottom: "0px" },
+            layer3: { top: "50px", bottom: "00px" },
+            layer4: { top: "50px", bottom: "0px" },
+            layer5: { top: "50px", bottom: "0px" }
           }
         });
         break;
       case 481 < width && width < 736:
         this.setState({
           size: {
-            title: { top: "-400px", bottom: "300px" },
-            layer1: { top: "0px", bottom: "100px" },
-            layer2: { top: "0px", bottom: "70px" },
+            title: { top: "-600px", bottom: "300px" },
+            layer1: { top: "-80px", bottom: "120px" },
+            layer2: { top: "-50px", bottom: "70px" },
             layer3: { top: "0px", bottom: "50px" },
             layer4: { top: "0px", bottom: "0px" },
             layer5: { top: "0px", bottom: "0px" }
@@ -67,9 +68,9 @@ class MyComponent extends Component {
         this.setState({
           size: {
             title: { top: "-500px", bottom: "300px" },
-            layer1: { top: "-100px", bottom: "300px" },
-            layer2: { top: "-50px", bottom: "100px" },
-            layer3: { top: "-50px", bottom: "50px" },
+            layer1: { top: "-170px", bottom: "500px" },
+            layer2: { top: "-140px", bottom: "240px" },
+            layer3: { top: "-70px", bottom: "70px" },
             layer4: { top: "0px", bottom: "0px" },
             layer5: { top: "0px", bottom: "-20px" }
           }
@@ -95,9 +96,18 @@ class MyComponent extends Component {
       <ParallaxProvider>
         <div className="mountains-container">
           <Parallax className="title" y={[size.title.top, size.title.bottom]}>
-            <Typography variant="h1" component="h1">
-              Felipe Luján
-            </Typography>
+            <Grid container direction="column" justify="center">
+              <Grid item>
+                <Typography variant="h1" component="h1">
+                  FELIPE LUJÁN
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography variant="h2" component="h2">
+                  Web developer
+                </Typography>
+              </Grid>
+            </Grid>
           </Parallax>
           <div className="mountains">
             <Parallax className="m1" y={[size.layer1.top, size.layer1.bottom]}>

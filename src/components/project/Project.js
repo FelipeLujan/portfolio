@@ -82,7 +82,7 @@ class Project extends Component {
           "I wanted to beef this project up so i picked React Springs for some animations such as mouse parallax (desktop) and the flipping card thingy at the end"
         ],
         source: "",
-        link: "#",
+        link: "https://sweet-dot-optical-bond-240720.appspot.com/",
         thumb: {
           desktop:
             "https://res.cloudinary.com/felipelujan/image/upload/f_auto/v1557337811/portfolio/sweet_desk.jpg",
