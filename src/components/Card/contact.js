@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Grid, Typography } from "@material-ui/core";
-import ContactCard from "./ContactCard";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Grid, Typography } from '@material-ui/core';
+import ContactCard from './ContactCard';
 
 class Contact extends Component {
   render() {
@@ -11,7 +11,7 @@ class Contact extends Component {
           <Grid item xs={10} md={6} className="contact-component__mentioned">
             <Grid container justify="flex-end" alignContent="center">
               <Grid item>
-                <Typography paragraph>...as i mentioned</Typography>{" "}
+                <Typography paragraph>...as i mentioned</Typography>{' '}
               </Grid>
             </Grid>
           </Grid>
@@ -21,26 +21,22 @@ class Contact extends Component {
           <Grid item className="contact-component__bio" xs={12} md={6}>
             <Grid container>
               <Typography component="p" variant="h3">
-                <strong>
-                  I’m a Web Developer and Certified Kubernetes Administrator
-                </strong>
-
+                I’m a Web Developer and Certified Kubernetes Administrator
                 <br />
               </Typography>
               <Typography component="p" paragraph>
-                I’ve worked extensively with <strong>React</strong> and{" "}
-                <strong>Vue</strong>, most of those projects have been deployed
-                either to <strong>Google Cloud Platform (GCP)</strong> or{" "}
-                <strong>Amazon Web Services (AWS)</strong> using{" "}
-                <strong>Docker Containers</strong> and{" "}
-                <strong>Kubernetes</strong> when it’s been necessary.
+                I’ve worked extensively with <strong>React</strong> and Vue,
+                most of those projects have been deployed either to{' '}
+                <strong>Google Cloud Platform (GCP)</strong> or{' '}
+                <strong>Amazon Web Services (AWS)</strong> using Docker
+                Containers and <strong>Kubernetes</strong> when it’s been
+                necessary.
                 <br />
               </Typography>
               <Typography paragraph component="p">
                 Those web apps have usually required any sort of state
-                management such as <strong>Redux</strong> or{" "}
-                <strong>VueX</strong>, and were connected to
-                <strong>REST APIs (usually built with Node.js)</strong>
+                management such as <strong>Redux</strong> or VueX, and were
+                connected to
               </Typography>
             </Grid>
           </Grid>
